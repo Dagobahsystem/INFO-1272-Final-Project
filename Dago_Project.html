@@ -1,11 +1,8 @@
-<!--
-	This is a sample layout, you can follow this, however feel free to create your own unique layout, you do not have to follow this layout. 
-	(I encourage you to create your own webpage from scratch)
--->
+
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/Dagobahsystem/INFO-1272-Final-Project/main/css/styles.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Dagobahsystem/INFO-1272-Final-Project/main/css/styles.css" />
     <title>MTG: Card Tavern</title>
   </head>
   <body>
@@ -14,18 +11,18 @@
       <h1 class="heading">Magic The Gathering: Card Tavern</h1>
       <p>Ready to brew some magic?</p>
       <div class="hero-btn-section">
-        <a href="#inventorySection"
-          ><input type="button" value="Inventory" class="hero-btn"
-        /></a>
-        <a href="#selectItemSection"
-          ><input type="button" value="Shop" class="hero-btn"
-        /></a>
-        <a href="#cartSection"
-          ><input type="button" value="My Cart" class="hero-btn" onclick=""
-        /></a>
-        <a href="#reviewSection"
-          ><input type="button" value="Review Items" class="hero-btn"
-        /></a>
+        <a href="#inventorySection">
+          <input type="button" value="Inventory" class="hero-btn" />
+        </a>
+        <a href="#selectItemSection">
+          <input type="button" value="Shop" class="hero-btn" />
+        </a>
+        <a href="#cartSection">
+          <input type="button" value="My Cart" class="hero-btn" />
+        </a>
+        <a href="#reviewSection">
+          <input type="button" value="Review Items" class="hero-btn" />
+        </a>
       </div>
       <span id="dateArea">Date/Time</span>
     </div>
@@ -33,8 +30,8 @@
     <!-- Inventory Section -->
     <fieldset class="sections" id="inventorySection">
       <legend class="sectionTitle">Inventory</legend>
-      <span class="left">Category: </span
-      ><select id="displayFilter" onchange="showUpdatedStore()">
+      <span class="left">Category: </span>
+      <select id="displayFilter" onchange="showUpdatedStore()">
         <option>All</option>
       </select>
       <span class="currency"></span>
@@ -112,17 +109,13 @@
       <legend class="sectionTitle">Review an Item</legend>
       <div class="left">
         <p class="inputSections">
-          Product ID: <input type="text" id="reviewId" />&nbsp;<span
-            id="reviewIdMsg"
-          ></span>
+          Product ID: <input type="text" id="reviewId" />&nbsp;<span id="reviewIdMsg"></span>
         </p>
         <p class="inputSections">
           Review: <input type="text" id="reviewDesc" size="100" />
         </p>
         <p class="inputSections">
-          Rating: <input type="number" id="reviewNum" />&nbsp;<span
-            id="addRatingValidationMessage"
-          ></span>
+          Rating: <input type="number" id="reviewNum" />&nbsp;<span id="addRatingValidationMessage"></span>
         </p>
       </div>
       <p class="btn-section">
@@ -142,3 +135,4 @@
     <script src="https://raw.githubusercontent.com/Dagobahsystem/INFO-1272-Final-Project/main/js/script.js"></script>
   </body>
 </html>
+
